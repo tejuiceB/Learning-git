@@ -18,11 +18,18 @@ form.addEventListener('submit', function(event) {
   document.getElementById('password').value = '';
 });
 
-function showPassword() {
-  var x = document.getElementById("password");
-  if (x.type === "password") {
-    x.type = "text";
+function togglePasswordVisibility() {
+  const passwordField = document.getElementById("password");
+  const eyeIcon = document.getElementById("eyeIcon");
+
+  if (passwordField.type === "password") {
+    passwordField.type = "text";
+    eyeIcon.classList.remove("fa-eye");
+    eyeIcon.classList.add("fa-eye-slash");
   } else {
-    x.type = "password";
+    passwordField.type = "password";
+    eyeIcon.classList.remove("fa-eye-slash");
+    eyeIcon.classList.add("fa-eye");
   }
 }
+
