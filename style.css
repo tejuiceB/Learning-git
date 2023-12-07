@@ -1,24 +1,50 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #0e1e25;
-  color: #fff;
+  background: url('./assets/bg.jpg') center center no-repeat;
+  color: #000;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100vw;
 }
 
 .container {
   background-color: rgba(255, 255, 255, 0.1);
+  background: url('./assets/form.jpg') center center no-repeat 20%;
   padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* border: 1px solid white; */
+  border-radius: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
   width: 300px;
   max-width: 90%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
 }
+.container:hover {
+  width: 298px;
+  max-width: 88%;
+  
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.main img {
+  height: 104px;
+  width: 104px;
+  border-radius: 104px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+  position:absolute;
+  top: 21.7%;
+}
+
 
 h1 {
   margin-bottom: 30px;
@@ -42,7 +68,7 @@ input[type="checkbox"] {
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
