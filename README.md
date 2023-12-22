@@ -1,7 +1,7 @@
 # Learning-git
 
 learning how to use git and github
-[Login Page](https://6571a09b0a66c370d954b350--amazing-moonbeam-261c1a.netlify.app/)
+[Login Page](https://sampleloginpage456.netlify.app/)
   
 ### TechStack Used
 
